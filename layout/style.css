@@ -58,3 +58,56 @@ body {
         transform: translateX(0%) translateY(0);
     }
 }
+
+
+/* Loader */
+.loader_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    animation: loader 2s ease-in-out infinite;
+}
+
+.loader1{
+    content: "";
+    border: 1px solid aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: loader 2s ease-in-out infinite 800ms;
+}
+.loader2{
+    content: "";
+    border: 1px solid aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: loader 2s ease-in-out infinite 900ms;
+}
+.loader3{
+    content: "";
+    border: 1px solid aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: loader 2s ease-in-out infinite 1ms;
+
+}
+@keyframes loader {
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(40%);
+    }
+    75%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
